@@ -1,0 +1,299 @@
+{
+  "common": {
+    "hotelName": "Araucarias Apartamentos",
+    "tagline": "Espacios modernos de alquiler temporario",
+    "loading": "Cargando...",
+    "error": "Ha ocurrido un error",
+    "backToHome": "Volver al inicio",
+    "viewMore": "Ver más",
+    "viewAll": "Ver todas",
+    "learnMore": "Conocer más",
+    "close": "Cerrar",
+    "open": "Abrir",
+    "menu": "Menú",
+    "language": "Idioma",
+    "spanish": "Español",
+    "english": "English",
+    "perNight": "por noche",
+    "from": "Desde",
+    "enquire": "Consultar"
+  },
+  "nav": {
+    "home": "Inicio",
+    "suites": "Unidades",
+    "services": "Servicios",
+    "gallery": "Galería",
+    "location": "Ubicación",
+    "reservations": "Reservas",
+    "reserve": "Reservar",
+    "contact": "Contacto"
+  },
+  "home": {
+    "hero": {
+      "cta": "Reservar ahora",
+      "slides": [
+        {
+          "title": "Viví el diseño,<br/>sentite en casa",
+          "subtitle": "Apartamentos contemporáneos con cocina completa en Moreno"
+        },
+        {
+          "title": "Tu espacio,<br/>tu ritmo",
+          "subtitle": "Cocina completa y todo lo que necesitás para una estadía a tu manera"
+        },
+        {
+          "title": "Arquitectura<br/>que inspira",
+          "subtitle": "Hormigón, madera y luz natural en cada detalle"
+        }
+      ]
+    },
+    "values": {
+      "design": "Diseño",
+      "designDesc": "Arquitectura contemporánea y espacios únicos",
+      "comfort": "Confort",
+      "comfortDesc": "Todo lo que necesitás para una estadía perfecta",
+      "freedom": "Libertad",
+      "freedomDesc": "Cocina completa y la autonomía de tu propio espacio"
+    },
+    "intro": {
+      "title": "Más que un hotel, tu espacio",
+      "description": "Diseñado para quienes buscan una estadía cómoda, práctica y estética. El complejo reúne departamentos equipados, amenities funcionales y un entorno tranquilo, logrando el equilibrio justo entre ubicación, descanso y experiencia.",
+      "cta": "Explorá las unidades"
+    },
+    "suites": {
+      "title": "Nuestras Unidades",
+      "subtitle": "Espacios amplios, luminosos y confortables",
+      "cta": "Ver todas las unidades"
+    },
+    "features": {
+      "title": "Pensado para vos",
+      "subtitle": "Amenities y servicios al huésped",
+      "cta": "Ver servicios"
+    },
+    "architecture": {
+      "title": "Arquitectura que inspira",
+      "description": "Un edificio de diseño único en zona oeste. Líneas curvas, grandes ventanales y espacios que dialogan con la luz natural. A solo 100 metros del Acceso Oeste."
+    },
+    "cta": {
+      "title": "¿Listo para una experiencia diferente?",
+      "subtitle": "Reservá tu unidad y descubrí una nueva forma de hospedarte",
+      "button": "Hacer una reserva",
+      "contact": "O escribinos por WhatsApp"
+    }
+  },
+  "suites": {
+    "pageTitle": "Nuestras Unidades",
+    "pageSubtitle": "Ambientes luminosos, amplios y confortables",
+    "filters": {
+      "all": "Todas",
+      "confort": "Confort",
+      "superior": "Superior",
+      "executive": "Executive"
+    },
+    "amenities": "Equipamiento",
+    "capacity": "Capacidad",
+    "size": "Superficie",
+    "guests": "huéspedes",
+    "reserve": "Reservar esta unidad",
+    "checkAvailability": "Consultar disponibilidad",
+    "weeklyCleaningIncluded": "Limpieza semanal incluida",
+    "sharedPatio": "Patio amplio y compartido",
+    "features": {
+      "kitchen": "Cocina completa",
+      "wifi": "WiFi sin cargo",
+      "ac": "Aire acondicionado frío/calor",
+      "tv": "Smart TV 43\"",
+      "linens": "Blanquería completa",
+      "closet": "Amplios placares",
+      "intercom": "Intercomunicador",
+      "patio": "Patio compartido",
+      "living": "Sala de estar",
+      "toilette": "Toilette"
+    },
+    "types": {
+      "confort": {
+        "name": "Categoría Confort",
+        "shortDesc": "Monoambiente con todo lo esencial",
+        "description": "Poseen 1 cama de 2,00 x 2,00 metros, blanquería, aire acondicionado frío/calor con graduación de temperatura individual, TV Led de 43\" Smart TV. Cocina completa con heladera, horno y hornallas, microondas, cafetera, espumador de leche, pava, tostadora y vajilla completa. Intercomunicador y WiFi sin cargo. Servicio de limpieza semanal incluido. Ambientes luminosos, amplios y confortables. Esta categoría cuenta con un patio amplio y compartido."
+      },
+      "superior": {
+        "name": "Categoría Superior",
+        "shortDesc": "Cocina-comedor y habitación separada",
+        "description": "Poseen una cocina comedor y una habitación, 1 cama de 2,00 x 2,00 metros, blanquería, aire acondicionado frío/calor con graduación de temperatura individual, TV Led de 43\" Smart TV. Cocina completa con heladera, horno y hornallas, microondas, cafetera, espumador de leche, pava, tostadora y vajilla completa. Servicio de limpieza semanal incluido, y adicional bajo demanda con cargo. Amplios placares, intercomunicador y WiFi sin cargo. Ambientes luminosos, amplios y confortables. Cuenta con patio amplio y compartido."
+      },
+      "executive": {
+        "name": "Executive Suite",
+        "shortDesc": "2 habitaciones, sala de estar y máximo confort",
+        "description": "Poseen una cocina comedor y 2 habitaciones con TV, 1 cama de 2,00 x 2,00 metros, 1 cama individual de 1,20 x 1,90 metros, sala de estar con sofá y TV, 1 baño completo, 1 toilette, blanquería, aire acondicionado frío/calor con graduación de temperatura individual. Cocina completa con TV, heladera, horno y hornallas, microondas, cafetera, espumador de leche, pava, tostadora y vajilla completa. Servicio de limpieza semanal incluido, y adicional bajo demanda con cargo. Ambientes luminosos, amplios y confortables. Cuenta con patio amplio y compartido."
+      }
+    }
+  },
+  "services": {
+    "pageTitle": "Servicios",
+    "pageSubtitle": "Todo pensado para que disfrutes tu estadía",
+    "categories": {
+      "suites": "En tu unidad",
+      "building": "En el edificio",
+      "convenience": "Servicios adicionales"
+    },
+    "list": {
+      "kitchen": {
+        "name": "Cocina Completa",
+        "description": "Heladera, horno, hornallas, microondas, cafetera, espumador de leche, pava, tostadora y vajilla completa."
+      },
+      "wifi": {
+        "name": "WiFi",
+        "description": "Conectividad a internet en habitaciones y áreas públicas sin cargo."
+      },
+      "ac": {
+        "name": "Climatización",
+        "description": "Aire acondicionado frío/calor con graduación de temperatura individual."
+      },
+      "smartTv": {
+        "name": "Smart TV 43\"",
+        "description": "Televisor LED con acceso a plataformas de streaming."
+      },
+      "linens": {
+        "name": "Blanquería",
+        "description": "Ropa de cama completa de alta calidad."
+      },
+      "intercom": {
+        "name": "Intercomunicador",
+        "description": "Comunicación directa con recepción y acceso al edificio."
+      },
+      "pool": {
+        "name": "Piscina",
+        "description": "Piscina descubierta para disfrutar en los días de calor."
+      },
+      "gym": {
+        "name": "Gimnasio",
+        "description": "Espacio equipado para mantenerte activo durante tu estadía."
+      },
+      "solarium": {
+        "name": "Solarium",
+        "description": "Área de descanso al aire libre para relajarte."
+      },
+      "cowork": {
+        "name": "Cowork",
+        "description": "Espacio de trabajo compartido ideal para trabajo remoto."
+      },
+      "grill": {
+        "name": "Parrilla",
+        "description": "Área de parrilla para disfrutar un asado."
+      },
+      "parking": {
+        "name": "Estacionamiento",
+        "description": "Cochera para tu vehículo durante toda tu estadía."
+      },
+      "security": {
+        "name": "Seguridad Nocturna",
+        "description": "Vigilancia durante la noche para tu tranquilidad."
+      },
+      "cleaning": {
+        "name": "Limpieza Semanal",
+        "description": "Servicio de limpieza semanal incluido en todas las unidades."
+      },
+      "extraCleaning": {
+        "name": "Limpieza Adicional",
+        "description": "Servicio de limpieza adicional bajo demanda con cargo."
+      }
+    }
+  },
+  "gallery": {
+    "pageTitle": "Galería",
+    "pageSubtitle": "Conocé nuestros espacios",
+    "categories": {
+      "all": "Todas",
+      "suites": "Unidades",
+      "common": "Áreas comunes",
+      "building": "Edificio",
+      "details": "Detalles"
+    },
+    "viewImage": "Ver imagen",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "of": "de"
+  },
+  "location": {
+    "pageTitle": "Ubicación",
+    "pageSubtitle": "A solo 100 metros del Acceso Oeste",
+    "address": "Dirección",
+    "area": "Moreno, zona oeste del Gran Buenos Aires",
+    "howToArrive": "Cómo llegar",
+    "byCar": "En auto",
+    "byCarDesc": "A solo 100 metros del Acceso Oeste. Estacionamiento propio.",
+    "byTrain": "En tren",
+    "byTrainDesc": "Estación Moreno del Ferrocarril Sarmiento a minutos.",
+    "byBus": "En colectivo",
+    "byBusDesc": "Múltiples líneas con paradas cercanas.",
+    "nearby": "En la zona",
+    "nearbyDesc": "Restaurantes, comercios y servicios a pocas cuadras.",
+    "contactUs": "Contactanos",
+    "contactSubtitle": "¿Tenés alguna consulta? Escribinos",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Email",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "send": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado! Te responderemos pronto.",
+      "error": "Hubo un error. Por favor, intentá de nuevo."
+    }
+  },
+  "reservations": {
+    "pageTitle": "Reservas",
+    "pageSubtitle": "Asegurá tu unidad en Araucarias",
+    "bookingInfo": "Sistema de reservas",
+    "bookingDesc": "Consultá disponibilidad y reservá tu unidad de forma rápida y segura.",
+    "alternativeContact": "¿Preferís contacto directo?",
+    "alternativeDesc": "Escribinos por WhatsApp y te ayudamos con tu reserva",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "checkInTime": "A partir de las 14:00",
+    "checkOutTime": "Hasta las 10:00",
+    "policies": {
+      "title": "Políticas",
+      "cancellation": "Cancelación gratuita hasta 48hs antes",
+      "payment": "Seña del 30% para confirmar reserva",
+      "pets": "Consultanos por mascotas"
+    }
+  },
+  "footer": {
+    "description": "Espacio moderno de alquiler temporario ubicado en Moreno, a solo 100 metros del Acceso Oeste. Departamentos equipados, amenities funcionales y un entorno tranquilo.",
+    "quickLinks": "Enlaces",
+    "contact": "Contacto",
+    "schedule": "Horarios",
+    "receptionSchedule": "Recepción: 8:00 a 20:00",
+    "checkInSchedule": "Check-in: 14:00 a 20:00",
+    "checkOutSchedule": "Check-out: hasta 10:00",
+    "followUs": "Seguinos",
+    "copyright": "© {{year}} Araucarias Apartamentos. Todos los derechos reservados.",
+    "developedBy": "Desarrollado por",
+    "privacyPolicy": "Privacidad",
+    "termsConditions": "Términos"
+  },
+  "accessibility": {
+    "skipToContent": "Saltar al contenido",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "toggleDarkMode": "Alternar modo oscuro",
+    "changeLanguage": "Cambiar idioma",
+    "scrollToTop": "Volver arriba"
+  },
+  "errors": {
+    "notFound": {
+      "title": "Página no encontrada",
+      "description": "La página que buscás no existe o fue movida.",
+      "cta": "Volver al inicio"
+    },
+    "generic": {
+      "title": "Algo salió mal",
+      "description": "Ocurrió un error inesperado. Por favor, intentá de nuevo.",
+      "cta": "Reintentar"
+    }
+  },
+  "whatsapp": {
+    "defaultMessage": "Hola! Me interesa hacer una reserva en Araucarias Apartamentos. ¿Podrían darme información sobre disponibilidad?",
+    "tooltip": "Escribinos"
+  }
+}

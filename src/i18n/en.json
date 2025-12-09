@@ -1,0 +1,299 @@
+{
+  "common": {
+    "hotelName": "Araucarias Apartments",
+    "tagline": "Modern temporary rental spaces",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "backToHome": "Back to home",
+    "viewMore": "View more",
+    "viewAll": "View all",
+    "learnMore": "Learn more",
+    "close": "Close",
+    "open": "Open",
+    "menu": "Menu",
+    "language": "Language",
+    "spanish": "Español",
+    "english": "English",
+    "perNight": "per night",
+    "from": "From",
+    "enquire": "Enquire"
+  },
+  "nav": {
+    "home": "Home",
+    "suites": "Units",
+    "services": "Services",
+    "gallery": "Gallery",
+    "location": "Location",
+    "reservations": "Reservations",
+    "reserve": "Book Now",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "cta": "Book now",
+      "slides": [
+        {
+          "title": "Live the design,<br/>feel at home",
+          "subtitle": "Contemporary apartments with full kitchen in Moreno"
+        },
+        {
+          "title": "Your space,<br/>your rhythm",
+          "subtitle": "Full kitchen and everything you need for a stay on your terms"
+        },
+        {
+          "title": "Architecture<br/>that inspires",
+          "subtitle": "Concrete, wood, and natural light in every detail"
+        }
+      ]
+    },
+    "values": {
+      "design": "Design",
+      "designDesc": "Contemporary architecture and unique spaces",
+      "comfort": "Comfort",
+      "comfortDesc": "Everything you need for a perfect stay",
+      "freedom": "Freedom",
+      "freedomDesc": "Full kitchen and the autonomy of your own space"
+    },
+    "intro": {
+      "title": "More than a hotel, your space",
+      "description": "Designed for those seeking a comfortable, practical, and aesthetic stay. The complex brings together equipped apartments, functional amenities, and a peaceful environment, achieving the perfect balance between location, rest, and experience.",
+      "cta": "Explore the units"
+    },
+    "suites": {
+      "title": "Our Units",
+      "subtitle": "Spacious, bright, and comfortable spaces",
+      "cta": "View all units"
+    },
+    "features": {
+      "title": "Designed for you",
+      "subtitle": "Amenities and guest services",
+      "cta": "View services"
+    },
+    "architecture": {
+      "title": "Architecture that inspires",
+      "description": "A uniquely designed building in west Buenos Aires. Curved lines, large windows, and spaces that dialogue with natural light. Just 100 meters from Acceso Oeste highway."
+    },
+    "cta": {
+      "title": "Ready for a different experience?",
+      "subtitle": "Book your unit and discover a new way to stay",
+      "button": "Make a reservation",
+      "contact": "Or message us on WhatsApp"
+    }
+  },
+  "suites": {
+    "pageTitle": "Our Units",
+    "pageSubtitle": "Bright, spacious, and comfortable spaces",
+    "filters": {
+      "all": "All",
+      "confort": "Confort",
+      "superior": "Superior",
+      "executive": "Executive"
+    },
+    "amenities": "Amenities",
+    "capacity": "Capacity",
+    "size": "Size",
+    "guests": "guests",
+    "reserve": "Book this unit",
+    "checkAvailability": "Check availability",
+    "weeklyCleaningIncluded": "Weekly cleaning included",
+    "sharedPatio": "Large shared patio",
+    "features": {
+      "kitchen": "Full kitchen",
+      "wifi": "Free WiFi",
+      "ac": "Heating and cooling",
+      "tv": "43\" Smart TV",
+      "linens": "Complete bedding",
+      "closet": "Spacious closets",
+      "intercom": "Intercom",
+      "patio": "Shared patio",
+      "living": "Living room",
+      "toilette": "Toilette"
+    },
+    "types": {
+      "confort": {
+        "name": "Confort Category",
+        "shortDesc": "Studio with all the essentials",
+        "description": "Features 1 bed (2.00 x 2.00 meters), bedding, individually controlled heating/cooling, 43\" LED Smart TV. Full kitchen with refrigerator, oven, stovetop, microwave, coffee maker, milk frother, kettle, toaster, and complete dinnerware. Intercom and free WiFi. Weekly cleaning service included. Bright, spacious, and comfortable spaces. This category includes a large shared patio."
+      },
+      "superior": {
+        "name": "Superior Category",
+        "shortDesc": "Kitchen-dining and separate bedroom",
+        "description": "Features a kitchen-dining area and bedroom, 1 bed (2.00 x 2.00 meters), bedding, individually controlled heating/cooling, 43\" LED Smart TV. Full kitchen with refrigerator, oven, stovetop, microwave, coffee maker, milk frother, kettle, toaster, and complete dinnerware. Weekly cleaning service included, additional cleaning on request for a fee. Spacious closets, intercom, and free WiFi. Bright, spacious, and comfortable spaces. Includes large shared patio."
+      },
+      "executive": {
+        "name": "Executive Suite",
+        "shortDesc": "2 bedrooms, living room, and maximum comfort",
+        "description": "Features a kitchen-dining area and 2 bedrooms with TV, 1 bed (2.00 x 2.00 meters), 1 single bed (1.20 x 1.90 meters), living room with sofa and TV, 1 full bathroom, 1 toilette, bedding, individually controlled heating/cooling. Full kitchen with TV, refrigerator, oven, stovetop, microwave, coffee maker, milk frother, kettle, toaster, and complete dinnerware. Weekly cleaning service included, additional cleaning on request for a fee. Bright, spacious, and comfortable spaces. Includes large shared patio."
+      }
+    }
+  },
+  "services": {
+    "pageTitle": "Services",
+    "pageSubtitle": "Everything designed for you to enjoy your stay",
+    "categories": {
+      "suites": "In your unit",
+      "building": "In the building",
+      "convenience": "Additional services"
+    },
+    "list": {
+      "kitchen": {
+        "name": "Full Kitchen",
+        "description": "Refrigerator, oven, stovetop, microwave, coffee maker, milk frother, kettle, toaster, and complete dinnerware."
+      },
+      "wifi": {
+        "name": "WiFi",
+        "description": "Internet connectivity in rooms and public areas at no charge."
+      },
+      "ac": {
+        "name": "Climate Control",
+        "description": "Heating and cooling with individual temperature control."
+      },
+      "smartTv": {
+        "name": "43\" Smart TV",
+        "description": "LED television with access to streaming platforms."
+      },
+      "linens": {
+        "name": "Bedding",
+        "description": "Complete high-quality bed linens."
+      },
+      "intercom": {
+        "name": "Intercom",
+        "description": "Direct communication with reception and building access."
+      },
+      "pool": {
+        "name": "Pool",
+        "description": "Outdoor pool to enjoy on warm days."
+      },
+      "gym": {
+        "name": "Gym",
+        "description": "Equipped space to stay active during your stay."
+      },
+      "solarium": {
+        "name": "Solarium",
+        "description": "Outdoor relaxation area to unwind."
+      },
+      "cowork": {
+        "name": "Cowork",
+        "description": "Shared workspace ideal for remote work."
+      },
+      "grill": {
+        "name": "BBQ Area",
+        "description": "Grill area to enjoy a barbecue."
+      },
+      "parking": {
+        "name": "Parking",
+        "description": "Parking for your vehicle during your entire stay."
+      },
+      "security": {
+        "name": "Night Security",
+        "description": "Overnight surveillance for your peace of mind."
+      },
+      "cleaning": {
+        "name": "Weekly Cleaning",
+        "description": "Weekly cleaning service included in all units."
+      },
+      "extraCleaning": {
+        "name": "Additional Cleaning",
+        "description": "Additional cleaning service on request for a fee."
+      }
+    }
+  },
+  "gallery": {
+    "pageTitle": "Gallery",
+    "pageSubtitle": "Discover our spaces",
+    "categories": {
+      "all": "All",
+      "suites": "Units",
+      "common": "Common areas",
+      "building": "Building",
+      "details": "Details"
+    },
+    "viewImage": "View image",
+    "previous": "Previous",
+    "next": "Next",
+    "of": "of"
+  },
+  "location": {
+    "pageTitle": "Location",
+    "pageSubtitle": "Just 100 meters from Acceso Oeste",
+    "address": "Address",
+    "area": "Moreno, west zone of Greater Buenos Aires",
+    "howToArrive": "How to arrive",
+    "byCar": "By car",
+    "byCarDesc": "Just 100 meters from Acceso Oeste highway. On-site parking.",
+    "byTrain": "By train",
+    "byTrainDesc": "Moreno Station on the Sarmiento line just minutes away.",
+    "byBus": "By bus",
+    "byBusDesc": "Multiple bus lines with nearby stops.",
+    "nearby": "Nearby",
+    "nearbyDesc": "Restaurants, shops, and services just blocks away.",
+    "contactUs": "Contact us",
+    "contactSubtitle": "Have a question? Write to us",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "send": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent! We'll get back to you soon.",
+      "error": "There was an error. Please try again."
+    }
+  },
+  "reservations": {
+    "pageTitle": "Reservations",
+    "pageSubtitle": "Secure your unit at Araucarias",
+    "bookingInfo": "Booking system",
+    "bookingDesc": "Check availability and book your unit quickly and securely.",
+    "alternativeContact": "Prefer direct contact?",
+    "alternativeDesc": "Message us on WhatsApp and we'll help with your reservation",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "checkInTime": "From 2:00 PM",
+    "checkOutTime": "Until 10:00 AM",
+    "policies": {
+      "title": "Policies",
+      "cancellation": "Free cancellation up to 48 hours before",
+      "payment": "30% deposit to confirm reservation",
+      "pets": "Ask us about pets"
+    }
+  },
+  "footer": {
+    "description": "Modern temporary rental space located in Moreno, just 100 meters from Acceso Oeste. Equipped apartments, functional amenities, and a peaceful environment.",
+    "quickLinks": "Links",
+    "contact": "Contact",
+    "schedule": "Hours",
+    "receptionSchedule": "Reception: 8:00 AM to 8:00 PM",
+    "checkInSchedule": "Check-in: 2:00 PM to 8:00 PM",
+    "checkOutSchedule": "Check-out: until 10:00 AM",
+    "followUs": "Follow us",
+    "copyright": "© {{year}} Araucarias Apartments. All rights reserved.",
+    "developedBy": "Developed by",
+    "privacyPolicy": "Privacy",
+    "termsConditions": "Terms"
+  },
+  "accessibility": {
+    "skipToContent": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleDarkMode": "Toggle dark mode",
+    "changeLanguage": "Change language",
+    "scrollToTop": "Scroll to top"
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you're looking for doesn't exist or has been moved.",
+      "cta": "Back to home"
+    },
+    "generic": {
+      "title": "Something went wrong",
+      "description": "An unexpected error occurred. Please try again.",
+      "cta": "Try again"
+    }
+  },
+  "whatsapp": {
+    "defaultMessage": "Hello! I'm interested in making a reservation at Araucarias Apartments. Could you give me information about availability?",
+    "tooltip": "Message us"
+  }
+}

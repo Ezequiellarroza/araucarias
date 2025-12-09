@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================
+   CSS VARIABLES - HOTEL ARAUCARIAS
+   ======================================== */
+
+:root {
+  /* Colores base */
+  --color-base: #EAE6E1;
+  --color-surface: #F5F2EE;
+  --color-sunken: #DDD9D4;
+  
+  /* Textos */
+  --color-text-primary: #2D2A26;
+  --color-text-secondary: #6B6560;
+  
+  /* Accent - Color del cliente */
+  --color-accent: #ad8c61;
+  --color-accent-hover: #9a7d56;
+  
+  /* Tipografía - Roboto */
+  --font-heading: 'Roboto', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+  
+  /* Transiciones */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+}
+
+.dark {
+  --color-base: #1A1918;
+  --color-surface: #242221;
+  --color-sunken: #141312;
+  --color-text-primary: #F5F2EE;
+  --color-text-secondary: #A39E98;
+  --color-accent: #c9a87a;
+  --color-accent-hover: #d4b88a;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  background-color: var(--color-base);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 500;
+}
+
+p {
+  color: var(--color-text-secondary);
+}
+
+/* ========================================
+   ACCENT COLOR UTILITIES
+   ======================================== */
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.border-accent {
+  border-color: var(--color-accent);
+}
+
+/* ========================================
+   GLASS EFFECT (para sección Intro/Parallax)
+   ======================================== */
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================
+   FORM ELEMENTS
+   ======================================== */
+
+input, textarea, select {
+  font-family: var(--font-body);
+  background-color: white;
+  border: 1px solid var(--color-sunken);
+  border-radius: 8px;
+  padding: 0.875rem 1rem;
+  color: var(--color-text-primary);
+  transition: all var(--transition-base);
+}
+
+.dark input, .dark textarea, .dark select {
+  background-color: var(--color-surface);
+  border-color: var(--color-sunken);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(173, 140, 97, 0.1);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--color-text-secondary);
+  opacity: 0.7;
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-sunken);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-hover);
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+
+::selection {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
+
+.animate-pulse-subtle:hover {
+  animation: none;
+}
+
+/* ========================================
+   UTILITIES
+   ======================================== */
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.section-padding {
+  padding-top: clamp(3rem, 8vw, 6rem);
+  padding-bottom: clamp(3rem, 8vw, 6rem);
+}
