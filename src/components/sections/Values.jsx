@@ -1,19 +1,19 @@
 import { useTranslation } from 'react-i18next'
-import { Palette, Sofa, UtensilsCrossed } from 'lucide-react'
+import { Sofa, Waves, Wifi } from 'lucide-react'
 import useInView from '../../hooks/useInView'
 
 const values = [
-  {
-    key: 'design',
-    icon: Palette
-  },
   {
     key: 'comfort',
     icon: Sofa
   },
   {
-    key: 'freedom',
-    icon: UtensilsCrossed
+    key: 'amenities',
+    icon: Waves  
+  },
+  {
+    key: 'wifi',
+    icon: Wifi
   }
 ]
 

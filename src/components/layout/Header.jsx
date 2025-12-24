@@ -15,8 +15,8 @@ import { asset } from '../../utils/assets'
  * 
  * Navegación principal con:
  * - Logo real + texto ARAUCARIAS
- * - Transparente con texto blanco en hero
- * - Fondo sólido al hacer scroll
+ * - Transparente con texto blanco en hero (solo Home)
+ * - Fondo sólido al hacer scroll o en páginas internas
  */
 function Header() {
   const { t } = useTranslation()
@@ -25,6 +25,10 @@ function Header() {
   
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  
+  // Detectar si estamos en Home
+  const isHome = location.pathname === '/'
+  const shouldShowSolidHeader = isScrolled || !isHome
 
   // Links de navegación
   const navLinks = [
@@ -63,15 +67,15 @@ function Header() {
   }, [isMenuOpen])
 
   // Determinar qué logo usar
-  // No scrolled = sobre hero = siempre logo blanco
-  // Scrolled = logo negro en light mode, logo blanco en dark mode
- const logoSrc = !isScrolled || isDark
-  ? asset('images/brand/logo-araucarias-white.png')
-  : asset('images/brand/logo-araucarias-black.png')
+  const logoSrc = !shouldShowSolidHeader
+    ? asset('images/brand/logo-araucarias-white.png')
+    : isDark
+      ? asset('images/brand/logo-araucarias-white.png')
+      : asset('images/brand/logo-araucarias-black.png')
 
-  // Clases de texto según estado del scroll
-  const textColorClass = isScrolled
-    ? 'text-text-primary dark:text-white'
+  // Clases de texto según estado del header
+  const textColorClass = shouldShowSolidHeader
+    ? 'text-text-primary'
     : 'text-white'
 
   return (
@@ -79,8 +83,8 @@ function Header() {
       <header
         className={`
           fixed top-0 left-0 right-0 z-50 transition-all duration-300
-          ${isScrolled
-            ? 'bg-white/95 dark:bg-base/95 backdrop-blur-md shadow-sm'
+          ${shouldShowSolidHeader
+            ? 'bg-surface backdrop-blur-md shadow-sm'
             : 'bg-transparent'
           }
         `}
@@ -116,10 +120,10 @@ function Header() {
                   to={link.to}
                   className={({ isActive }) => `
                     px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200
-                    ${isScrolled
+                    ${shouldShowSolidHeader
                       ? isActive
-                        ? 'text-accent bg-gray-100 dark:bg-white/10'
-                        : 'text-text-secondary hover:text-text-primary hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-white/10'
+                        ? 'text-accent bg-sunken'
+                        : 'text-text-secondary hover:text-text-primary hover:bg-sunken'
                       : isActive
                         ? 'text-white bg-white/20'
                         : 'text-white/80 hover:text-white hover:bg-white/10'
@@ -135,24 +139,24 @@ function Header() {
             <div className="hidden lg:flex items-center gap-3">
               
               {/* Selector de idioma */}
-              <LanguageSelector variant="compact" isScrolled={isScrolled} />
+              <LanguageSelector variant="compact" isScrolled={shouldShowSolidHeader} />
               
               {/* Toggle Dark Mode */}
               <button
                 onClick={toggleTheme}
                 className={`
                   p-2.5 rounded-lg transition-all duration-200
-                  ${isScrolled
-                    ? 'bg-gray-100 hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/20'
+                  ${shouldShowSolidHeader
+                    ? 'bg-sunken hover:bg-accent/20'
                     : 'bg-white/10 hover:bg-white/20'
                   }
                 `}
                 aria-label={t('accessibility.toggleDarkMode')}
               >
                 {isDark ? (
-                  <Sun className={`w-5 h-5 ${isScrolled ? 'text-accent' : 'text-white'}`} />
+                  <Sun className={`w-5 h-5 ${shouldShowSolidHeader ? 'text-accent' : 'text-white'}`} />
                 ) : (
-                  <Moon className={`w-5 h-5 ${isScrolled ? 'text-accent' : 'text-white'}`} />
+                  <Moon className={`w-5 h-5 ${shouldShowSolidHeader ? 'text-accent' : 'text-white'}`} />
                 )}
               </button>
 
@@ -167,15 +171,15 @@ function Header() {
               onClick={() => setIsMenuOpen(true)}
               className={`
                 lg:hidden p-2.5 rounded-lg transition-all duration-200
-                ${isScrolled
-                  ? 'bg-gray-100 hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/20'
+                ${shouldShowSolidHeader
+                  ? 'bg-sunken hover:bg-accent/20'
                   : 'bg-white/10 hover:bg-white/20'
                 }
               `}
               aria-label={t('accessibility.openMenu')}
               aria-expanded={isMenuOpen}
             >
-              <Menu className={`w-5 h-5 ${isScrolled ? 'text-text-primary dark:text-white' : 'text-white'}`} />
+              <Menu className={`w-5 h-5 ${shouldShowSolidHeader ? 'text-text-primary' : 'text-white'}`} />
             </button>
           </div>
         </div>
@@ -192,7 +196,7 @@ function Header() {
         {/* Overlay */}
         <div
           className={`
-            absolute inset-0 bg-white/98 dark:bg-base/98 backdrop-blur-xl
+            absolute inset-0 bg-surface/98 backdrop-blur-xl
             transition-opacity duration-500
             ${isMenuOpen ? 'opacity-100' : 'opacity-0'}
           `}
@@ -219,17 +223,17 @@ function Header() {
                 alt="Araucarias"
                 className="w-10 h-10 object-contain"
               />
-              <span className="font-heading text-xl font-semibold tracking-wide text-text-primary dark:text-white">
+              <span className="font-heading text-xl font-semibold tracking-wide text-text-primary">
                 ARAUCARIAS
               </span>
             </Link>
 
             <button
               onClick={() => setIsMenuOpen(false)}
-              className="p-2.5 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/20 transition-colors duration-200"
+              className="p-2.5 rounded-lg bg-sunken hover:bg-accent/20 transition-colors duration-200"
               aria-label={t('accessibility.closeMenu')}
             >
-              <X className="w-5 h-5 text-text-primary dark:text-white" />
+              <X className="w-5 h-5 text-text-primary" />
             </button>
           </div>
 
@@ -243,8 +247,8 @@ function Header() {
                 className={({ isActive }) => `
                   px-4 py-4 rounded-lg text-lg font-medium transition-all duration-200
                   ${isActive
-                    ? 'text-accent bg-gray-100 dark:bg-white/10'
-                    : 'text-text-primary dark:text-white hover:bg-gray-50 dark:hover:bg-white/5'
+                    ? 'text-accent bg-sunken'
+                    : 'text-text-primary hover:bg-sunken'
                   }
                 `}
                 style={{ 
@@ -257,7 +261,7 @@ function Header() {
           </nav>
 
           {/* Acciones del menú mobile */}
-          <div className="pt-6 border-t border-gray-200 dark:border-white/10 space-y-4">
+          <div className="pt-6 border-t border-sunken space-y-4">
             
             {/* Fila de controles: idioma y dark mode */}
             <div className="flex items-center justify-between">
@@ -270,7 +274,7 @@ function Header() {
 
               <button
                 onClick={toggleTheme}
-                className="p-3 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-white/10 dark:hover:bg-white/20 transition-colors duration-200"
+                className="p-3 rounded-lg bg-sunken hover:bg-accent/20 transition-colors duration-200"
                 aria-label={t('accessibility.toggleDarkMode')}
               >
                 {isDark ? (

@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import Button from '../ui/Button'
 import { ChevronDown } from 'lucide-react'
+import { asset } from '../../utils/assets'
 
 // Configuración de slides (imágenes)
 const slideImages = [

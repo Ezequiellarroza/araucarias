@@ -47,15 +47,15 @@
       ]
     },
     "values": {
-      "design": "Diseño",
-      "designDesc": "Arquitectura contemporánea y espacios únicos",
-      "comfort": "Confort",
-      "comfortDesc": "Todo lo que necesitás para una estadía perfecta",
-      "freedom": "Libertad",
-      "freedomDesc": "Cocina completa y la autonomía de tu propio espacio"
-    },
+  "comfort": "Confort",
+  "comfortDesc": "Espacios pensados para tu descanso con todo lo que necesitás.",
+  "amenities": "Amenities",
+  "amenitiesDesc": "Piscina, gimnasio, solarium y más para disfrutar tu estadía.",
+  "wifi": "WiFi",
+  "wifiDesc": "Conexión de alta velocidad en todo el complejo."
+},
     "intro": {
-      "title": "Más que un hotel, tu espacio",
+      "title": "Tu escapada perfecta",
       "description": "Diseñado para quienes buscan una estadía cómoda, práctica y estética. El complejo reúne departamentos equipados, amenities funcionales y un entorno tranquilo, logrando el equilibrio justo entre ubicación, descanso y experiencia.",
       "cta": "Explorá las unidades"
     },
@@ -65,16 +65,16 @@
       "cta": "Ver todas las unidades"
     },
     "features": {
-      "title": "Pensado para vos",
+      "title": "Tu lugar para descansar",
       "subtitle": "Amenities y servicios al huésped",
       "cta": "Ver servicios"
     },
     "architecture": {
-      "title": "Arquitectura que inspira",
+      "title": "Pensada para descansar, diseñada para disfrutar",
       "description": "Un edificio de diseño único en zona oeste. Líneas curvas, grandes ventanales y espacios que dialogan con la luz natural. A solo 100 metros del Acceso Oeste."
     },
     "cta": {
-      "title": "¿Listo para una experiencia diferente?",
+      "title": "Tu escapada rodeada de verde",
       "subtitle": "Reservá tu unidad y descubrí una nueva forma de hospedarte",
       "button": "Hacer una reserva",
       "contact": "O escribinos por WhatsApp"
@@ -199,47 +199,28 @@
     }
   },
   "gallery": {
-    "pageTitle": "Galería",
-    "pageSubtitle": "Conocé nuestros espacios",
-    "categories": {
-      "all": "Todas",
-      "suites": "Unidades",
-      "common": "Áreas comunes",
-      "building": "Edificio",
-      "details": "Detalles"
-    },
-    "viewImage": "Ver imagen",
-    "previous": "Anterior",
-    "next": "Siguiente",
-    "of": "de"
+  "title": "Galería",
+  "filters": {
+    "all": "Todas",
+    "unidades": "Unidades",
+    "habitaciones": "Habitaciones",
+    "edificio": "Edificio"
   },
+  "lightbox": {
+    "close": "Cerrar",
+    "prev": "Anterior",
+    "next": "Siguiente"
+  }
+},
   "location": {
-    "pageTitle": "Ubicación",
-    "pageSubtitle": "A solo 100 metros del Acceso Oeste",
-    "address": "Dirección",
-    "area": "Moreno, zona oeste del Gran Buenos Aires",
-    "howToArrive": "Cómo llegar",
-    "byCar": "En auto",
-    "byCarDesc": "A solo 100 metros del Acceso Oeste. Estacionamiento propio.",
-    "byTrain": "En tren",
-    "byTrainDesc": "Estación Moreno del Ferrocarril Sarmiento a minutos.",
-    "byBus": "En colectivo",
-    "byBusDesc": "Múltiples líneas con paradas cercanas.",
-    "nearby": "En la zona",
-    "nearbyDesc": "Restaurantes, comercios y servicios a pocas cuadras.",
-    "contactUs": "Contactanos",
-    "contactSubtitle": "¿Tenés alguna consulta? Escribinos",
-    "form": {
-      "name": "Nombre completo",
-      "email": "Email",
-      "phone": "Teléfono",
-      "message": "Mensaje",
-      "send": "Enviar mensaje",
-      "sending": "Enviando...",
-      "success": "¡Mensaje enviado! Te responderemos pronto.",
-      "error": "Hubo un error. Por favor, intentá de nuevo."
-    }
-  },
+  "title": "Ubicación",
+  "subtitle": "A metros del Acceso Oeste",
+  "contact": "Contacto",
+  "phone": "Teléfono",
+  "email": "Email",
+  "address": "Dirección",
+  "openMaps": "Abrir en Google Maps"
+},
   "reservations": {
     "pageTitle": "Reservas",
     "pageSubtitle": "Asegurá tu unidad en Araucarias",
