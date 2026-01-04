@@ -34,7 +34,7 @@ function Header() {
   const navLinks = [
     { to: '/', label: t('nav.home') },
     { to: '/habitaciones', label: t('nav.suites') },
-    { to: '/servicios', label: t('nav.services') },
+
     { to: '/galeria', label: t('nav.gallery') },
     { to: '/ubicacion', label: t('nav.location') },
   ]

@@ -41,11 +41,14 @@ export const suites = [
       bedrooms: 0,
       bathrooms: 1,
     },
-    bedSize: '2.00 x 2.00',
+    bedSize: '1 cama de 2.00 x 2.00 m',
     amenities: ['kitchen', 'wifi', 'ac', 'tv', 'linens', 'intercom', 'patio'],
     featured: true,
     images: [
-      'images/suites/suite-clasica.webp',
+      'images/suites/confort/confort-001.webp',
+      'images/suites/confort/confort-002.webp',
+      'images/suites/confort/confort-003.webp',
+      'images/suites/confort/confort-004.webp',
     ],
     highlights: ['kitchen', 'ac', 'patio'],
   },
@@ -60,11 +63,14 @@ export const suites = [
       bedrooms: 1,
       bathrooms: 1,
     },
-    bedSize: '2.00 x 2.00',
+    bedSize: '1 cama de 2.00 x 2.00 m',
     amenities: ['kitchen', 'wifi', 'ac', 'tv', 'linens', 'closet', 'intercom', 'patio'],
     featured: true,
     images: [
-      'images/suites/suite-superior.webp',
+      'images/suites/superior/superior-001.webp',
+      'images/suites/superior/superior-002.webp',
+      'images/suites/superior/superior-003.webp',
+      'images/suites/superior/superior-004.webp',
     ],
     highlights: ['kitchen', 'closet', 'patio'],
   },
@@ -80,15 +86,21 @@ export const suites = [
       bathrooms: 1,
       toilette: 1,
     },
-    bedSize: '2.00 x 2.00 + 1.20 x 1.90',
+    bedSize: '1 cama de 2.00 x 2.00 m + 1 cama de 1.20 x 1.90 m',
     amenities: ['kitchen', 'wifi', 'ac', 'tv', 'linens', 'closet', 'intercom', 'patio', 'living', 'toilette'],
     featured: true,
     images: [
-      'images/suites/loft-premium.webp',
+      'images/suites/executive/executive-001.webp',
+      'images/suites/executive/executive-002.webp',
+      'images/suites/executive/executive-003.webp',
+      'images/suites/executive/executive-004.webp',
+      'images/suites/executive/executive-005.webp',
+      'images/suites/executive/executive-006.webp',
     ],
     highlights: ['living', 'kitchen', 'patio'],
   },
 ]
+
 /**
  * Helpers
  */

@@ -44,7 +44,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider>
       <Suspense fallback={<LoadingFallback />}>
-        <BrowserRouter basename="/araucarias">
+        <BrowserRouter>
           <App />
         </BrowserRouter>
       </Suspense>
