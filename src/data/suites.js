@@ -36,6 +36,7 @@ export const suites = [
     type: SUITE_TYPES.CONFORT,
     i18nKey: 'confort',
     price: null,
+    available: true,
     capacity: {
       guests: 2,
       bedrooms: 0,
@@ -58,6 +59,7 @@ export const suites = [
     type: SUITE_TYPES.SUPERIOR,
     i18nKey: 'superior',
     price: null,
+    available: true,
     capacity: {
       guests: 2,
       bedrooms: 1,
@@ -80,6 +82,7 @@ export const suites = [
     type: SUITE_TYPES.EXECUTIVE,
     i18nKey: 'executive',
     price: null,
+    available: false, // No disponible todavía
     capacity: {
       guests: 4,
       bedrooms: 2,
@@ -105,6 +108,10 @@ export const suites = [
  * Helpers
  */
 
+export function getAvailableSuites() {
+  return suites.filter(suite => suite.available)
+}
+
 export function getSuiteBySlug(slug) {
   return suites.find(suite => suite.slug === slug) || null
 }
@@ -114,12 +121,12 @@ export function getSuiteById(id) {
 }
 
 export function getSuitesByType(type) {
-  if (!type || type === 'all') return suites
-  return suites.filter(suite => suite.type === type)
+  if (!type || type === 'all') return getAvailableSuites()
+  return suites.filter(suite => suite.type === type && suite.available)
 }
 
 export function getFeaturedSuites() {
-  return suites.filter(suite => suite.featured)
+  return suites.filter(suite => suite.featured && suite.available)
 }
 
 export function formatPrice(price, locale = 'es-AR') {
@@ -133,7 +140,7 @@ export function formatPrice(price, locale = 'es-AR') {
 }
 
 export function getPriceRange() {
-  const prices = suites.filter(s => s.price).map(s => s.price)
+  const prices = suites.filter(s => s.price && s.available).map(s => s.price)
   if (prices.length === 0) return { min: null, max: null }
   return {
     min: Math.min(...prices),

@@ -13,9 +13,137 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
     
     <title>Hotel Araucarias | Suites de Diseño en Moreno</title>
+
+    <!-- WuBook Widget - Oculto por defecto y estilos personalizados -->
+    <style>
+      /* Ocultar widget por defecto */
+      [id^="root_f2882160-cbe6-4b91-90cb-e207e26b8d95"] {
+        display: none;
+        position: relative !important;
+        width: 100% !important;
+      }
+      
+      /* Contenedor principal del widget */
+      .kas_hl_wrapper {
+        background: #F5F2EE !important;
+        border-radius: 12px !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+        border: 1px solid #DDD9D4 !important;
+        overflow: hidden !important;
+        font-family: 'Roboto', sans-serif !important;
+      }
+      
+      /* Inputs del widget */
+      .kas_hl_wrapper input,
+      .kas_hl_wrapper select {
+        background: #ffffff !important;
+        border: 1px solid #DDD9D4 !important;
+        border-radius: 8px !important;
+        color: #1A1715 !important;
+        font-family: 'Roboto', sans-serif !important;
+      }
+      
+      .kas_hl_wrapper input:focus,
+      .kas_hl_wrapper select:focus {
+        border-color: #ad8c61 !important;
+        box-shadow: 0 0 0 3px rgba(173, 140, 97, 0.1) !important;
+        outline: none !important;
+      }
+      
+      /* Labels */
+      .kas_hl_wrapper label,
+      .kas_hl_wrapper .kas_hl_label {
+        color: #524D47 !important;
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 12px !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+      }
+      
+      /* Textos y valores */
+      .kas_hl_wrapper span,
+      .kas_hl_wrapper div {
+        font-family: 'Roboto', sans-serif !important;
+      }
+      
+      /* Botón de reserva */
+      .kas_hl_wrapper button,
+      .kas_hl_wrapper .kas_hl_submit,
+      .kas_hl_wrapper [class*="submit"],
+      .kas_hl_wrapper [class*="button"],
+      .kas_hl_wrapper [class*="btn"] {
+        background: #ad8c61 !important;
+        background-color: #ad8c61 !important;
+        border: none !important;
+        border-radius: 8px !important;
+        color: #ffffff !important;
+        font-family: 'Roboto', sans-serif !important;
+        font-weight: 500 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+        transition: background-color 0.3s ease !important;
+      }
+      
+      .kas_hl_wrapper button:hover,
+      .kas_hl_wrapper .kas_hl_submit:hover,
+      .kas_hl_wrapper [class*="submit"]:hover,
+      .kas_hl_wrapper [class*="button"]:hover,
+      .kas_hl_wrapper [class*="btn"]:hover {
+        background: #9a7d56 !important;
+        background-color: #9a7d56 !important;
+      }
+      
+      /* Celdas/campos del formulario */
+      .kas_hl_wrapper td,
+      .kas_hl_wrapper th,
+      .kas_hl_wrapper [class*="cell"],
+      .kas_hl_wrapper [class*="field"] {
+        background: #ffffff !important;
+        border-color: #DDD9D4 !important;
+      }
+      
+      /* Dark mode */
+      .dark .kas_hl_wrapper {
+        background: #242221 !important;
+        border-color: #141312 !important;
+      }
+      
+      .dark .kas_hl_wrapper input,
+      .dark .kas_hl_wrapper select,
+      .dark .kas_hl_wrapper td,
+      .dark .kas_hl_wrapper [class*="cell"],
+      .dark .kas_hl_wrapper [class*="field"] {
+        background: #1A1918 !important;
+        border-color: #141312 !important;
+        color: #F5F2EE !important;
+      }
+      
+      .dark .kas_hl_wrapper label,
+      .dark .kas_hl_wrapper .kas_hl_label {
+        color: #A39E98 !important;
+      }
+      
+      .dark .kas_hl_wrapper button,
+      .dark .kas_hl_wrapper .kas_hl_submit {
+        background: #c9a87a !important;
+        background-color: #c9a87a !important;
+      }
+      
+      .dark .kas_hl_wrapper button:hover,
+      .dark .kas_hl_wrapper .kas_hl_submit:hover {
+        background: #d4b88a !important;
+        background-color: #d4b88a !important;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- WuBook Booking Widget -->
+    <script class="kas_online_reception" src="https://wubook.net/js/nebk/bwidget.jgz" data-wid="f2882160-cbe6-4b91-90cb-e207e26b8d95"></script>
+    
+    <!-- WuBook Iframe para página de reservas -->
+    <script src="https://wubook.net/js/nebi/iframe.jgz"></script>
   </body>
 </html>

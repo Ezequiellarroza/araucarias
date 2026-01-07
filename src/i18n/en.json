@@ -46,14 +46,14 @@
         }
       ]
     },
-   "values": {
-  "comfort": "Comfort",
-  "comfortDesc": "Spaces designed for your rest with everything you need.",
-  "amenities": "Amenities",
-  "amenitiesDesc": "Pool, gym, solarium and more to enjoy your stay.",
-  "wifi": "WiFi",
-  "wifiDesc": "High-speed connection throughout the complex."
-},
+    "values": {
+      "comfort": "Comfort",
+      "comfortDesc": "Spaces designed for your rest with everything you need.",
+      "amenities": "Amenities",
+      "amenitiesDesc": "Pool, gym, solarium and more to enjoy your stay.",
+      "wifi": "WiFi",
+      "wifiDesc": "High-speed connection throughout the complex."
+    },
     "intro": {
       "title": "Your perfect getaway",
       "description": "Designed for those seeking a comfortable, practical, and aesthetic stay. The complex brings together equipped apartments, functional amenities, and a peaceful environment, achieving the perfect balance between location, rest, and experience.",
@@ -62,7 +62,7 @@
     "suites": {
       "title": "Our Units",
       "subtitle": "Spacious, bright, and comfortable spaces",
-      "cta": "View all units"
+      "cta": "Check availability"
     },
     "features": {
       "title": "Your place to unwind",
@@ -199,28 +199,55 @@
     }
   },
   "gallery": {
-  "title": "Gallery",
-  "filters": {
-    "all": "All",
-    "unidades": "Units",
-    "habitaciones": "Rooms",
-    "edificio": "Building"
+    "title": "Gallery",
+    "filters": {
+      "all": "All",
+      "unidades": "Units",
+      "habitaciones": "Rooms",
+      "edificio": "Building"
+    },
+    "lightbox": {
+      "close": "Close",
+      "prev": "Previous",
+      "next": "Next"
+    }
   },
-  "lightbox": {
-    "close": "Close",
-    "prev": "Previous",
-    "next": "Next"
-  }
-},
   "location": {
-  "title": "Location",
-  "subtitle": "Steps away from Acceso Oeste",
-  "contact": "Contact",
-  "phone": "Phone",
-  "email": "Email",
-  "address": "Address",
-  "openMaps": "Open in Google Maps"
-},
+    "title": "Location & Contact",
+    "subtitle": "Steps away from Acceso Oeste",
+    "contact": "Contact",
+    "contactInfo": "Contact information",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "openMaps": "Open in Google Maps",
+    "form": {
+      "title": "Send us your inquiry",
+      "name": "Full name",
+      "namePlaceholder": "E.g.: John Smith",
+      "email": "Email address",
+      "emailPlaceholder": "E.g.: john@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "E.g.: +54 11 1234-5678",
+      "source": "How did you find us?",
+      "sourcePlaceholder": "Select an option",
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help you...",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "successTitle": "Message sent!",
+      "successMessage": "Thank you for contacting us. We will respond shortly.",
+      "sendAnother": "Send another inquiry",
+      "errorGeneric": "An error occurred. Please try again.",
+      "sources": {
+        "instagram": "Instagram",
+        "recommendation": "Recommendation",
+        "google": "Google search",
+        "portal": "Travel portal (Booking, Airbnb, etc.)",
+        "other": "Other"
+      }
+    }
+  },
   "reservations": {
     "pageTitle": "Reservations",
     "pageSubtitle": "Secure your unit at Araucarias",
@@ -276,5 +303,8 @@
   "whatsapp": {
     "defaultMessage": "Hello! I'm interested in making a reservation at Araucarias Apartments. Could you give me information about availability?",
     "tooltip": "Message us"
+  },
+  "booking": {
+    "title": "Book your stay"
   }
 }

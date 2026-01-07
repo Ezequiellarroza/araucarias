@@ -105,16 +105,16 @@ function Hero() {
         >
           {/* Imagen Desktop */}
           <img
-  src={asset(slide.desktop)}
-  alt={slide.alt}
-  className="hidden lg:block absolute inset-0 w-full h-full object-cover"
-/>
+            src={asset(slide.desktop)}
+            alt={slide.alt}
+            className="hidden lg:block absolute inset-0 w-full h-full object-cover"
+          />
           {/* Imagen Mobile */}
           <img
-  src={asset(slide.mobile)}
-  alt={slide.alt}
-  className="block lg:hidden absolute inset-0 w-full h-full object-cover"
-/>
+            src={asset(slide.mobile)}
+            alt={slide.alt}
+            className="block lg:hidden absolute inset-0 w-full h-full object-cover"
+          />
         </div>
       ))}
 
@@ -169,7 +169,7 @@ function Hero() {
               <Button to="/reservas" variant="primary">
                 {t('home.hero.cta')}
               </Button>
-              <Button to="/suites" variant="secondary">
+              <Button to="/habitaciones" variant="secondary">
                 {t('nav.suites')}
               </Button>
               <Button to="/ubicacion" variant="ghost" className="text-white hover:text-text-primary">

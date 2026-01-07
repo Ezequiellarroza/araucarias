@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { ChefHat, Wifi, AirVent, Waves, Dumbbell, Laptop } from 'lucide-react'
 import useInView from '../../hooks/useInView'
-import Button from '../ui/Button'
 
 const features = [
   { key: 'kitchen', icon: ChefHat },
@@ -65,17 +64,10 @@ function FeaturesPreview() {
         </div>
 
         {/* Grid de features */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 lg:gap-6 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 lg:gap-6">
           {features.map((feature, index) => (
             <FeatureItem key={feature.key} feature={feature} index={index} />
           ))}
-        </div>
-
-        {/* CTA */}
-        <div className="text-center">
-          <Button to="/servicios" variant="primary">
-            {t('home.features.cta')}
-          </Button>
         </div>
       </div>
     </section>

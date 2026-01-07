@@ -1,4 +1,5 @@
 import Hero from '../components/sections/Hero'
+import BookingWidget from '../components/sections/BookingWidget'
 import Values from '../components/sections/Values'
 import Intro from '../components/sections/Intro'
 import HomeSuites from '../components/sections/HomeSuites'
@@ -10,9 +11,10 @@ function Home() {
   return (
     <>
       <Hero />
+      <BookingWidget />
       <HomeSuites />
       <Intro />
-       <Values />
+      <Values />
       <FeaturesPreview />
       <Architecture />
       <FinalCTA />

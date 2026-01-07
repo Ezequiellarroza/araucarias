@@ -18,7 +18,7 @@ import {
 } from 'lucide-react'
 import useInView from '../hooks/useInView'
 import Button from '../components/ui/Button'
-import { suites, AMENITIES } from '../data/suites'
+import { getAvailableSuites, AMENITIES } from '../data/suites'
 import { asset } from '../utils/assets'
 
 // Mapeo de iconos
@@ -211,6 +211,7 @@ function SuiteSection({ suite, index }) {
 function Rooms() {
   const { t } = useTranslation()
   const [headerRef, headerInView] = useInView({ threshold: 0.2 })
+  const availableSuites = getAvailableSuites()
 
   return (
     <section className="min-h-screen bg-base">
@@ -238,7 +239,7 @@ function Rooms() {
 
       {/* Secciones de habitaciones */}
       <div className="pb-20 lg:pb-0">
-        {suites.map((suite, index) => (
+        {availableSuites.map((suite, index) => (
           <SuiteSection key={suite.id} suite={suite} index={index} />
         ))}
       </div>

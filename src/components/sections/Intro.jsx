@@ -48,7 +48,7 @@ function Intro() {
           </p>
 
           {/* CTA */}
-          <Button to="/suites" variant="primary">
+          <Button to="/habitaciones" variant="primary">
             {t('home.intro.cta')}
           </Button>
         </div>

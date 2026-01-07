@@ -47,13 +47,13 @@
       ]
     },
     "values": {
-  "comfort": "Confort",
-  "comfortDesc": "Espacios pensados para tu descanso con todo lo que necesitás.",
-  "amenities": "Amenities",
-  "amenitiesDesc": "Piscina, gimnasio, solarium y más para disfrutar tu estadía.",
-  "wifi": "WiFi",
-  "wifiDesc": "Conexión de alta velocidad en todo el complejo."
-},
+      "comfort": "Confort",
+      "comfortDesc": "Espacios pensados para tu descanso con todo lo que necesitás.",
+      "amenities": "Amenities",
+      "amenitiesDesc": "Piscina, gimnasio, solarium y más para disfrutar tu estadía.",
+      "wifi": "WiFi",
+      "wifiDesc": "Conexión de alta velocidad en todo el complejo."
+    },
     "intro": {
       "title": "Tu escapada perfecta",
       "description": "Diseñado para quienes buscan una estadía cómoda, práctica y estética. El complejo reúne departamentos equipados, amenities funcionales y un entorno tranquilo, logrando el equilibrio justo entre ubicación, descanso y experiencia.",
@@ -62,7 +62,7 @@
     "suites": {
       "title": "Nuestras Unidades",
       "subtitle": "Espacios amplios, luminosos y confortables",
-      "cta": "Ver todas las unidades"
+      "cta": "Consultar disponibilidad"
     },
     "features": {
       "title": "Tu lugar para descansar",
@@ -199,28 +199,55 @@
     }
   },
   "gallery": {
-  "title": "Galería",
-  "filters": {
-    "all": "Todas",
-    "unidades": "Unidades",
-    "habitaciones": "Habitaciones",
-    "edificio": "Edificio"
+    "title": "Galería",
+    "filters": {
+      "all": "Todas",
+      "unidades": "Unidades",
+      "habitaciones": "Habitaciones",
+      "edificio": "Edificio"
+    },
+    "lightbox": {
+      "close": "Cerrar",
+      "prev": "Anterior",
+      "next": "Siguiente"
+    }
   },
-  "lightbox": {
-    "close": "Cerrar",
-    "prev": "Anterior",
-    "next": "Siguiente"
-  }
-},
   "location": {
-  "title": "Ubicación",
-  "subtitle": "A metros del Acceso Oeste",
-  "contact": "Contacto",
-  "phone": "Teléfono",
-  "email": "Email",
-  "address": "Dirección",
-  "openMaps": "Abrir en Google Maps"
-},
+    "title": "Ubicación y Contacto",
+    "subtitle": "A metros del Acceso Oeste",
+    "contact": "Contacto",
+    "contactInfo": "Información de contacto",
+    "phone": "Teléfono",
+    "email": "Email",
+    "address": "Dirección",
+    "openMaps": "Abrir en Google Maps",
+    "form": {
+      "title": "Envianos tu consulta",
+      "name": "Nombre completo",
+      "namePlaceholder": "Ej: Juan Pérez",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "Ej: juan@email.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "Ej: +54 11 1234-5678",
+      "source": "¿Cómo nos conociste?",
+      "sourcePlaceholder": "Seleccioná una opción",
+      "message": "Mensaje",
+      "messagePlaceholder": "Contanos en qué podemos ayudarte...",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando...",
+      "successTitle": "¡Mensaje enviado!",
+      "successMessage": "Gracias por contactarnos. Te responderemos a la brevedad.",
+      "sendAnother": "Enviar otra consulta",
+      "errorGeneric": "Ocurrió un error. Por favor intentá nuevamente.",
+      "sources": {
+        "instagram": "Instagram",
+        "recommendation": "Por recomendación",
+        "google": "Búsqueda en Google",
+        "portal": "Portal de turismo (Booking, Airbnb, etc.)",
+        "other": "Otra"
+      }
+    }
+  },
   "reservations": {
     "pageTitle": "Reservas",
     "pageSubtitle": "Asegurá tu unidad en Araucarias",
@@ -276,5 +303,8 @@
   "whatsapp": {
     "defaultMessage": "Hola! Me interesa hacer una reserva en Araucarias Apartamentos. ¿Podrían darme información sobre disponibilidad?",
     "tooltip": "Escribinos"
+  },
+  "booking": {
+    "title": "Reservá tu estadía"
   }
 }
