@@ -90,7 +90,9 @@
       "executive": "Executive"
     },
     "amenities": "Equipamiento",
-    "capacity": "Capacidad",
+    "capacity": {
+      "superior": "3 adultos o 2 adultos y 2 niños"
+    },
     "size": "Superficie",
     "guests": "huéspedes",
     "reserve": "Reservar esta unidad",

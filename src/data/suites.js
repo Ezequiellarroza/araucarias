@@ -61,9 +61,10 @@ export const suites = [
     price: null,
     available: true,
     capacity: {
-      guests: 2,
+      guests: 3,
       bedrooms: 1,
       bathrooms: 1,
+      customText: true,
     },
     bedSize: '1 cama de 2.00 x 2.00 m',
     amenities: ['kitchen', 'wifi', 'ac', 'tv', 'linens', 'closet', 'intercom', 'patio'],

@@ -10,6 +10,11 @@ function SuiteCard({ suite, index }) {
   const { t } = useTranslation()
   const [ref, isInView] = useInView({ threshold: 0.1 })
 
+  // Determinar texto de capacidad
+  const capacityText = suite.capacity.customText
+    ? t(`suites.capacity.${suite.i18nKey}`)
+    : `${suite.capacity.guests} ${t('suites.guests')}`
+
   return (
     <Link
       to="/habitaciones"
@@ -49,7 +54,7 @@ function SuiteCard({ suite, index }) {
           {/* Capacidad */}
           <div className="flex items-center gap-1.5 text-text-secondary">
             <Users className="w-4 h-4" />
-            <span className="text-sm">{suite.capacity.guests} {t('suites.guests')}</span>
+            <span className="text-sm">{capacityText}</span>
           </div>
 
           {/* Ver más */}

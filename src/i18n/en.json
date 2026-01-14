@@ -90,7 +90,9 @@
       "executive": "Executive"
     },
     "amenities": "Amenities",
-    "capacity": "Capacity",
+    "capacity": {
+      "superior": "3 adults or 2 adults and 2 children"
+    },
     "size": "Size",
     "guests": "guests",
     "reserve": "Book this unit",

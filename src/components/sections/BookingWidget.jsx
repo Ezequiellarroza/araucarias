@@ -8,9 +8,11 @@ function BookingWidget() {
   const containerRef = useRef(null)
 
   useEffect(() => {
+    const widgetId = 'f0df4a1e-997d-4ed8-8d7a-9d6e38922a95'
+    
     // Función para mover el widget al contenedor
     const moveWidget = () => {
-      const widget = document.querySelector('[id^="root_f2882160-cbe6-4b91-90cb-e207e26b8d95"]')
+      const widget = document.querySelector(`[id^="root_${widgetId}"]`)
       
       if (widget && containerRef.current && !containerRef.current.contains(widget)) {
         containerRef.current.appendChild(widget)
@@ -21,7 +23,7 @@ function BookingWidget() {
     const style = document.createElement('style')
     style.id = 'show-wubook-widget-style'
     style.innerHTML = `
-      [id^="root_f2882160-cbe6-4b91-90cb-e207e26b8d95"] {
+      [id^="root_${widgetId}"] {
         display: block !important;
         position: relative !important;
         width: 100% !important;
@@ -29,7 +31,7 @@ function BookingWidget() {
     `
     document.head.appendChild(style)
 
-    // Intentar mover el widget inmediatamente y con un pequeño delay (por si tarda en cargar)
+    // Intentar mover el widget inmediatamente y con delays (por si tarda en cargar)
     moveWidget()
     const timer = setTimeout(moveWidget, 500)
     const timer2 = setTimeout(moveWidget, 1500)

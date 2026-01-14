@@ -112,6 +112,11 @@ function SuiteSection({ suite, index }) {
   const [ref, isInView] = useInView({ threshold: 0.1 })
   const isReversed = index % 2 !== 0
 
+  // Determinar texto de capacidad
+  const capacityText = suite.capacity.customText 
+    ? t(`suites.capacity.${suite.i18nKey}`)
+    : suite.capacity.guests
+
   return (
     <div
       ref={ref}
@@ -155,7 +160,7 @@ function SuiteSection({ suite, index }) {
           <div className="flex flex-wrap gap-2 mb-6">
             <div className="flex items-center gap-1.5 px-3 py-1.5 bg-gray-100 dark:bg-white/10 rounded-full">
               <Users className="w-4 h-4 text-accent" />
-              <span className="text-sm text-text-primary dark:text-white">{suite.capacity.guests}</span>
+              <span className="text-sm text-text-primary dark:text-white">{capacityText}</span>
             </div>
             {suite.capacity.bedrooms > 0 && (
               <div className="flex items-center gap-1.5 px-3 py-1.5 bg-gray-100 dark:bg-white/10 rounded-full">
