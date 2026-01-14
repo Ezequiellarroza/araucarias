@@ -68,10 +68,10 @@ function Header() {
 
   // Determinar qué logo usar
   const logoSrc = !shouldShowSolidHeader
-    ? asset('images/brand/logo-araucarias-white.png')
-    : isDark
-      ? asset('images/brand/logo-araucarias-white.png')
-      : asset('images/brand/logo-araucarias-black.png')
+  ? asset('images/brand/logo-icon-white.png')
+  : isDark
+    ? asset('images/brand/logo-icon-white.png')
+    : asset('images/brand/logo-icon-black.png')
 
   // Clases de texto según estado del header
   const textColorClass = shouldShowSolidHeader
@@ -219,10 +219,10 @@ function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               <img 
-                src={isDark ? asset('images/brand/logo-araucarias-white.png') : asset('images/brand/logo-araucarias-black.png')}
-                alt="Araucarias"
-                className="w-10 h-10 object-contain"
-              />
+  src={isDark ? asset('images/brand/logo-icon-white.png') : asset('images/brand/logo-icon-black.png')}
+  alt="Araucarias"
+  className="w-10 h-10 object-contain"
+/>
               <span className="font-heading text-xl font-semibold tracking-wide text-text-primary">
                 ARAUCARIAS
               </span>
