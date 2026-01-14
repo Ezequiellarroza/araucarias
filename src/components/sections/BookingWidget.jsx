@@ -10,13 +10,14 @@ function BookingWidget() {
   useEffect(() => {
     const widgetId = 'f0df4a1e-997d-4ed8-8d7a-9d6e38922a95'
     
-    // Función para mover el widget al contenedor
     const moveWidget = () => {
       const widget = document.querySelector(`[id^="root_${widgetId}"]`)
       
       if (widget && containerRef.current && !containerRef.current.contains(widget)) {
         containerRef.current.appendChild(widget)
+        return true
       }
+      return false
     }
 
     // Crear estilo para mostrar el widget
@@ -31,19 +32,31 @@ function BookingWidget() {
     `
     document.head.appendChild(style)
 
-    // Intentar mover el widget inmediatamente y con delays (por si tarda en cargar)
-    moveWidget()
-    const timer = setTimeout(moveWidget, 500)
-    const timer2 = setTimeout(moveWidget, 1500)
+    // Intentar mover inmediatamente (por si ya existe)
+    if (moveWidget()) {
+      return () => {
+        const styleTag = document.getElementById('show-wubook-widget-style')
+        if (styleTag) document.head.removeChild(styleTag)
+      }
+    }
+
+    // Si no existe aún, observar el DOM hasta que aparezca
+    const observer = new MutationObserver((mutations) => {
+      if (moveWidget()) {
+        observer.disconnect()
+      }
+    })
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    })
 
     // Cleanup
     return () => {
-      clearTimeout(timer)
-      clearTimeout(timer2)
+      observer.disconnect()
       const styleTag = document.getElementById('show-wubook-widget-style')
-      if (styleTag) {
-        document.head.removeChild(styleTag)
-      }
+      if (styleTag) document.head.removeChild(styleTag)
     }
   }, [])
 
@@ -66,7 +79,6 @@ function BookingWidget() {
           <div className="w-12 h-px bg-accent mx-auto" />
         </div>
         
-        {/* Contenedor donde se moverá el widget de WuBook */}
         <div 
           ref={containerRef}
           className="max-w-4xl mx-auto"

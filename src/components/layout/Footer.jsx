@@ -51,18 +51,15 @@ function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link 
-              to="/" 
-              className="flex items-center gap-3 group"
-            >
-              <img 
-                src={logoSrc}
-                alt="Araucarias"
-                className="w-10 h-10 object-contain"
-              />
-              <span className="font-heading text-xl font-semibold tracking-wide text-text-primary dark:text-white">
-                ARAUCARIAS
-              </span>
-            </Link>
+  to="/" 
+  className="group"
+>
+  <img 
+    src={logoSrc}
+    alt="Araucarias"
+    className="h-12 object-contain"
+  />
+</Link>
             <p className="mt-4 text-text-secondary text-sm leading-relaxed">
               {t('footer.description')}
             </p>
