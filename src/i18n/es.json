@@ -307,6 +307,11 @@
     "tooltip": "Escribinos"
   },
   "booking": {
-    "title": "Reservá tu estadía"
+    "title": "Reservas",
+    "shortStay": {
+      "message": "Nuestro sistema de reservas online tiene un mínimo de 4 noches. Para estadías más cortas, contáctenos directamente y con gusto lo asistiremos.",
+      "button": "Consultar disponibilidad",
+      "whatsappMessage": "Hola! Me gustaría consultar disponibilidad para una estadía menor a 4 noches en Araucarias Apartamentos."
+    }
   }
 }

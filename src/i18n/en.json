@@ -307,6 +307,11 @@
     "tooltip": "Message us"
   },
   "booking": {
-    "title": "Book your stay"
+    "title": "Reservations",
+    "shortStay": {
+      "message": "Our online booking system has a 4-night minimum stay. For shorter stays, please contact us directly and we'll be happy to assist you.",
+      "button": "Check availability",
+      "whatsappMessage": "Hi! I'd like to check availability for a stay shorter than 4 nights at Araucarias Apartamentos."
+    }
   }
 }
