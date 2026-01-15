@@ -49,7 +49,7 @@ export const suites = [
       'images/suites/confort/confort-001.webp',
       'images/suites/confort/confort-002.webp',
       'images/suites/confort/confort-003.webp',
-      'images/suites/confort/confort-004.webp',
+      
     ],
     highlights: ['kitchen', 'ac', 'patio'],
   },
@@ -73,6 +73,7 @@ export const suites = [
       'images/suites/superior/superior-001.webp',
       'images/suites/superior/superior-002.webp',
       'images/suites/superior/superior-003.webp',
+      'images/suites/superior/superior-004.webp',
       
     ],
     highlights: ['kitchen', 'closet', 'patio'],
