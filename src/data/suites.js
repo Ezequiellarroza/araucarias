@@ -73,7 +73,7 @@ export const suites = [
       'images/suites/superior/superior-001.webp',
       'images/suites/superior/superior-002.webp',
       'images/suites/superior/superior-003.webp',
-      'images/suites/superior/superior-004.webp',
+      
     ],
     highlights: ['kitchen', 'closet', 'patio'],
   },
